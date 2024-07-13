@@ -12,7 +12,7 @@ module.exports = {
      * }], {});
     */
     //Users tên của table
-    await queryInterface.bulkInsert('Users', [
+    await queryInterface.bulkInsert('User', [
       {
         username: 'John Doe1',
         email: 'jd1@gmail.com',
