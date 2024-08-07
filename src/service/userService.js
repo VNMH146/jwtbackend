@@ -42,8 +42,8 @@ const getUserList = async () => {
     nest: true
   });
 
-  console.log("check:", newUser);
-  console.log("check Role and Group:", roles);
+  // console.log("check:", newUser);
+  // console.log("check Role and Group:", roles);
 
 
 
@@ -68,7 +68,7 @@ const getUserById = async (id) => {
       id: id
     }
   })
-  return user;
+  return user.get({ plain: true });
 }
 
 const updateUser = async (email, username, id) => {
