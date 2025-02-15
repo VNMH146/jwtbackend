@@ -87,7 +87,7 @@ const handleUserLogin = async (rawData) => {
     if (user) {
       console.log("Found user with email/phone");
       let isCorrectPassword = checkPassword(rawData.password, user.password);
-      if (isCorrectPassword == true) {
+      if (isCorrectPassword === true) {
         return {
           EM: 'ok!',
           EC: 0,
